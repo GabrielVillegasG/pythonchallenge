@@ -6,8 +6,8 @@ input_file = 02-homework-03
 total_months = []
 total_profit = []
 monthly_profit_change = []
-with open(input_file,newline="", encoding="utf-8") as budget:
-csvreader = csv.reader(budget,delimiter=",") 
+ open as budget:
+csvreader = csv.reader(budget) 
   
 for row in csvreader: 
 
@@ -29,20 +29,20 @@ max_decrease_month = monthly_profit_change.index(min(monthly_profit_change)) + 1
 
 
 print("Financial Analysis")
-print("----------------------------")
-print(f"Total Months: {len(total_months)}")
-print(f"Total: ${sum(total_profit)}")
-print(f"Average Change: {round(sum(monthly_profit_change)/len(monthly_profit_change),2)}")
-print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
-print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
+print("---------")
+print("Total Months:(total_month)
+print("Total: (total_profit)}")
+print("Average Change:(monthly_profit_change)/(monthly_profit_change)")
+print("Greatest Increase in Profits: {total_months[max_increase_month]} (max_increase_value))
+print("Greatest Decrease in Profits: {total_months[max_decrease_month]} ((max_decrease_value")
 
 
-output_file = Path("python-challenge", "PyBank", "Financial_Analysis_Summary.txt")
+output_file = Path("python-challenge", "PyBank"
 
 with open(output_file,"w") as file:
 file.write("Financial Analysis")
 file.write("\n")
-file.write("----------------------------")
+file.write("----------")
 file.write("\n")
 file.write(f"Total Months: {len(total_months)}")
 file.write("\n")
